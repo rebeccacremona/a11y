@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">  
+    <title>Straight Up HTML | A11Y Experiments</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/normalize.css" rel="stylesheet" media="all">
+    <link href="css/styles.css" rel="stylesheet" media="all">
+    <link href="bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet" media="all">
+    <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body>
+    <header>  
+        <h1>A11Y Experiments: Straight Up, Valid HTML5 plus Bootstrap CSS</h1>
+        <nav>
+            <ul>
+                <li><a href="//www.somwhere.com/one">One</a></li>
+                <li><a href="//www.somwhere.com/one">Two</a></li>
+                <li><a href="//www.somwhere.com/one">Three</a></li>
+                <li><a href="//www.somwhere.com/one">Four</a></li>
+                <li><a href="//www.somwhere.com/one">Five</a></li>
+                <li><a href="//www.somwhere.com/one">Six</a></li>
+                <li><a href="//www.somwhere.com/one">Seven</a></li>
+                <li><a href="//www.somwhere.com/one">Eight</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="wrap">
+        <main>
+            <section>
+                <h2>Contents</h2>
+                <p>First, the code, then a discussion.</p>
+            </section>
+            <section>
+                <h2><a href="//html-ipsum.com/">HTML Ipsum</a> Presents: The Kitchen Sink</h2>
+           
+                <h3>A paragraph</h3>
+
+                <p>Let's try some text wrapped in "strong" tags: <strong>This text is strong!</strong> Now, let's try some text wrapped in emphasis tags: <em>This is emphasized!</em> Now let's try some code: <code>This is code!</code> Let's also try a link <a href="//www.google.com">link to somewhere else</a> (you should arrive at google) and a <a href="#ordered_list">link to a non-tabbable element in this page</a> (you should end up on an ordered list). And we're done with normal paragraph text.</p>
+
+                <h3>Lists</h3>
+                           
+                <ol id="ordered_list">
+                   <li>This is the first item in an ordered list.</li>
+                   <li>This is the second item in an ordered list.</li>
+                </ol>
+
+                <ul id="unordered_list">
+                   <li>This is the first item in an unordered list.</li>
+                   <li> <a href="#">This is the second item in an unordered list, a giant link.</a></li>
+                </ul>
+
+                <h3>A table</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td>Elaine</td>
+                            <td>Benes</td>
+                            <td>elaine_benes@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Jerry</td>
+                            <td>Seinfeld</td>
+                            <td>jerry_seinfeld@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>Cosmo</td>
+                            <td>Kramer</td>
+                            <td>cosmo_kramer@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>A Form</h3>
+
+                <form action="#" method="post">
+                    <div>
+                         <label for="name">Name:</label>
+                         <input type="text" name="name" id="name" value=""/>
+                    </div>
+
+                    <div>
+                        <fieldset>
+                        <legend>Beverage Choice</legend>
+                             <label for="radio-choice-1">coffee</label>
+                             <input type="radio" name="beverage" id="radio-choice-1" value="coffee" />
+
+                             <label for="radio-choice-2">tea</label>
+                             <input type="radio" name="beverage" id="radio-choice-2" value="tea" />
+                         </fieldset>
+                    </div>
+
+                    <div>
+                        <fieldset>
+                        <legend>How do you take your beverage?</legend>
+                            <label for="milk">with milk</label>
+                            <input type="checkbox" name="temp" id="milk" />
+                            <label for="cream">with cream</label>
+                            <input type="checkbox" name="temp" id="cream" />
+                            <label for="sugar">with sugar</label>
+                            <input type="checkbox" name="temp" id="sugar" />
+                        </fieldset>
+                    </div>
+
+                    <div>
+                        <label for="select-choice">Prefered Temperature?</label>
+                        <select name="select-choice" id="select-choice">
+                            <option value="hot">hot</option>
+                            <option value="room_temp">room temperature</option>
+                            <option value="iced">iced</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="textarea">Anything else?</label>
+                        <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+                    </div>
+                    
+                    <div>
+                        <input type="submit" value="Submit" />
+                    </div>
+                </form>
+
+                <h3>Less Common Elements</h3>
+
+                <blockquote><p>This is a paragraph inside a blockquote. What follows next will be some css code, wrapped in "pre" and "code" tags.</p></blockquote>
+
+                <pre><code>
+                #header h1 a { 
+                    display: block; 
+                    width: 300px; 
+                    height: 80px; 
+                }
+                </code></pre>
+            </section>
+            <section>
+                <h2>Discussion</h2>
+                <p> As expected, just loading the css doesn't seem to change anything. Not tested particularly thoroughly, as there doesn't seem to be a need.</p>
+            </section>
+        
+        </main>
+    </div>
+    
+    <footer>
+        <small>The footer text.</small>
+    </footer>
+    
+</body>
+</html>
