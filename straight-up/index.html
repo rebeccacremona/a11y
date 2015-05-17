@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">  
+    <title>Straight Up HTML | A11Y Experiments</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/normalize.css" rel="stylesheet" media="all">
+    <link href="css/styles.css" rel="stylesheet" media="all">   
+    <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body>
+    <header>  
+        <h1>A11Y Experiments: Straight Up, Valid HTML5</h1>
+        <nav>
+            <ul>
+                <li><a href="//www.somwhere.com/one">One</a></li>
+                <li><a href="//www.somwhere.com/one">Two</a></li>
+                <li><a href="//www.somwhere.com/one">Three</a></li>
+                <li><a href="//www.somwhere.com/one">Four</a></li>
+                <li><a href="//www.somwhere.com/one">Five</a></li>
+                <li><a href="//www.somwhere.com/one">Six</a></li>
+                <li><a href="//www.somwhere.com/one">Seven</a></li>
+                <li><a href="//www.somwhere.com/one">Eight</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="wrap">
+        <main>
+            <section>
+                <h2>Contents</h2>
+                <p>First, the code, then a discussion.</p>
+            </section>
+            <section>
+                <h2><a href="//html-ipsum.com/">HTML Ipsum</a> Presents: The Kitchen Sink</h2>
+           
+                <h3>A paragraph</h3>
+
+                <p>Let's try some text wrapped in "strong" tags: <strong>This text is strong!</strong> Now, let's try some text wrapped in emphasis tags: <em>This is emphasized!</em> Now let's try some code: <code>This is code!</code> Let's also try a link <a href="//www.google.com">link to somewhere else</a> (you should arrive at google) and a <a href="#ordered_list">link to a non-tabbable element in this page</a> (you should end up on an ordered list). And we're done with normal paragraph text.</p>
+
+                <h3>Lists</h3>
+                           
+                <ol id="ordered_list">
+                   <li>This is the first item in an ordered list.</li>
+                   <li>This is the second item in an ordered list.</li>
+                </ol>
+
+                <ul id="unordered_list">
+                   <li>This is the first item in an unordered list.</li>
+                   <li> <a href="#">This is the second item in an unordered list, a giant link.</a></li>
+                </ul>
+
+                <h3>A table</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td>Elaine</td>
+                            <td>Benes</td>
+                            <td>elaine_benes@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Jerry</td>
+                            <td>Seinfeld</td>
+                            <td>jerry_seinfeld@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>Cosmo</td>
+                            <td>Kramer</td>
+                            <td>cosmo_kramer@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>A Form</h3>
+
+                <form action="#" method="post">
+                    <div>
+                         <label for="name">Name:</label>
+                         <input type="text" name="name" id="name" value=""/>
+                    </div>
+
+                    <div>
+                        <fieldset>
+                        <legend>Beverage Choice</legend>
+                             <label for="radio-choice-1">coffee</label>
+                             <input type="radio" name="beverage" id="radio-choice-1" value="coffee" />
+
+                             <label for="radio-choice-2">tea</label>
+                             <input type="radio" name="beverage" id="radio-choice-2" value="tea" />
+                         </fieldset>
+                    </div>
+
+                    <div>
+                        <fieldset>
+                        <legend>How do you take your beverage?</legend>
+                            <label for="milk">with milk</label>
+                            <input type="checkbox" name="temp" id="milk" />
+                            <label for="cream">with cream</label>
+                            <input type="checkbox" name="temp" id="cream" />
+                            <label for="sugar">with sugar</label>
+                            <input type="checkbox" name="temp" id="sugar" />
+                        </fieldset>
+                    </div>
+
+                    <div>
+                        <label for="select-choice">Prefered Temperature?</label>
+                        <select name="select-choice" id="select-choice">
+                            <option value="hot">hot</option>
+                            <option value="room_temp">room temperature</option>
+                            <option value="iced">iced</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="textarea">Anything else?</label>
+                        <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+                    </div>
+                    
+                    <div>
+                        <input type="submit" value="Submit" />
+                    </div>
+                </form>
+
+                <h3>Less Common Elements</h3>
+
+                <blockquote><p>This is a paragraph inside a blockquote. What follows next will be some css code, wrapped in "pre" and "code" tags.</p></blockquote>
+
+                <pre><code>
+                #header h1 a { 
+                    display: block; 
+                    width: 300px; 
+                    height: 80px; 
+                }
+                </code></pre>
+            </section>
+            <section>
+                <h2>Discussion</h2>
+                <h3>Tested Software Versions</h3>
+                    <ul>
+                        <li>OSX 10.9.5</li>
+                        <li>Safari 7.1.6</li>
+                        <li>Chrome 42.0.2311.152</li>
+                        <li>Firefox 38.0.1</li>
+                    </ul>
+                <h3>VoiceOver, in Safari</h3>
+                    <p>Voiceover is surprisingly chatty on first interacting with the page. "Interact with Straight Up HTML | A11y Experiments HTML content heading level 1 A11Y Experiments: Straight Up, Valid HTML5. Interact with heading level 1 A11Y Experiments: Straight Up, Valid HTML5. A11Y Experiments: Straight Up, Valid HTML5."</p>
+                    <p>Though "header" and "nav" tags are used, Safari does not announce that we are entering a banner landmark or a navigation landmark.</p> 
+                    <p>In the nav, Voiceover focuses on each bullet and speaks "pillet" before focusing on and speaking the text of the bullet item. Contrast this with its behavior reading the sample unordered list, and the unordered list of software versions above. When a link begins the list item text, the bullet receive focus, and is spoken as "pillet." If normal text begins the list item, the bullet is grouped with the content, and does NOT receive separate focus. Instead, VoiceOver says "bullet OSX10.9.5", etc. 
+                    </p>
+                    <p>No obvious difference in the way strong text, emphasized text, or code is spoken. It's possible this can be configured in VoiceOver settings, but is likely an option reserved for power-users if so.</p>
+                    <p>The link to Google works as expected, but the link to the ordered list does not. Keyboard focus remains on the link, and VoiceOver is silent. After advancing again, VoiceOver reads the second ordered list item, implying that partially successful refocusing occured.... but not particularly good refocusing.</p>
+                    <p>Column headers are correctly read before cell table contents</p>
+                    <p>Form groups are announced as groups, allowing you to interact with the elements or not, as desired.</p>
+                    <p>Labels receive focus and are read separately, and then are read again when focusing on the input element</p>
+                    <p>VoiceOver speaks "blockquote level 1" after speaking the block quote.</p>
+                    <p>The code is simply read through.</p>
+                    <p> When entering the footer, VoiceOver announces that you are entering the footer landmark.</p>
+
+
+                <h3>VoiceOver, in Firefox</h3>
+                    <p>On interacting with the page, VoiceOver does announce that we are in the "banner" landmark. It's doesn't repeat itself, like it does in Safari.</p>
+                    <p>On entering the nav element, VoiceOver says we are entering the navigation landmark. Unlike in Safari, bullets do not receive separate focus. Instead, each item is read, "link One bullet One."</p>
+                    <p> The "main" landmark is announced, when we enter main. The text is read with no discernable difference between regular and strong, etc., and the internal link doesn't work at all. The screen scrolls a bit, but keyboard and VoiceOver remains on the link. So, when you advance, its as though you had never clicked at all, but with a confusing screen scroll.</p>
+                    <p>For the non-link list item, the text is read alone, as we'd expect. The linked list item is read like the nav links "This is a.... bullet. This is a...". But, VoiceOver speaks "double quote" at the end of the line, for some reason, when reading the text-list items. (Line-ending encoding issue? No idea....).</p>
+                    <p>Table rows are read as units, each column one after another, with no indication of column breaks. Each row is called a "list box." You can interact with each row (each list box) if you want to hear each cell individually. Each cell is then called a group (e.g. "Kramer group"). The column headers are not read before the cell content. The VO+C results in an error, not in the column header being read. Weird.</p>
+                    <p>Each label in the form receives focus separately. Then, when entering the input element, each label is read , and then the legend is read twice. VO+space does not toggle the radio buttons, though VoiceOver says "press". Space pressed alone, without the VO keys, does toggle the radio button, but VoiceOver remains silent. VO+space works normally with checkboxes.</p>
+                    <p>The select menu was impossible to use. VO+space did open the menu, but then it was impossible to move the focus off "hot." Nor did anything else I tried work. Very erratic.</p>
+                    <p>Blockquote not announced as such.</p>
+
+                <h3>VoiceOver, in Chrome</h3>
+                    <p>On interacting with the page, VoiceOver does announce that we are in the "banner" landmark. It's doesn't repeat itself, like it does in Safari.</p>
+                    <p>On entering the nav element, VoiceOver says we are entering the navigation landmark. However, like Safari, and unlike Firefox, Voiceover focuses on each bullet and speaks "pillet" before focusing on and speaking the text of the bullet item. Further, it says "clickable" after saying "pillet"! If you press the link (VO+space) it says, "press list", and thankfully, doesn't take you anywhere.</p>
+                    <p> The "main" landmark is announced, when we enter main. The text is read with no discernable difference between regular and strong, etc., and the internal link doesn't work at all. The screen scrolls a bit, but keyboard and VoiceOver remains on the link. So, when you advance, its as though you had never clicked at all, but with a confusing screen scroll. Oddly, it says "double quote" at the end of the paragraph. No idea what's up there, again.</p>
+                    <p> List items as in Safari and in the nav element.</p>
+                    <p> The table is identified as a table, and not read bizarrely as in Firefox, but cell contents are not read properly with their column headers. Oddly, the first column, ID, is. The first column is also the only column in which column and row numbers are being read (despite VoiceOver config). VO+C does not announce the column header, or give an error.</p>
+                    <p>Forms are great. When entering a fieldset, you are read the legend. Then, you are brought to the first input element, and read the label, then the legend, then the input state ("tea, beverage choice, unselected radio button.). Ideal.</p>
+                    <p>Blockquote not announced as such</p>
+
+                <h3>ChromeVox, in Chrome</h3>
+                    <p>Much less verbose. Only heading is read, and then it says "heading one". Doesn't mention a banner role, doesn't mention the page title.</p>
+                    <p>Says, "navigation with eight items. One, link item. Two, link list item." Etc.</p>
+                    <p>Announces entering a section. Doesn't say anything about "main".</p>
+                    <p>Reads paragraph as a whole or one screen-line at time, including links, without stopping. Like all other cases, no discernable difference in strong or emphasized text or code. After the line is read, e.g. while it's highlighted, you can press tab to get to the links. You DO end up at the ordered list, when you click the link! It's read properly.</p>
+                    <p>Lists are read really well. "Unordered list with two items" and then the list item text. No "bullet" or "pillet" or weird focusing, even when the list item is a big link. Instead, it just reads the link information like you'd expect, e.g., by saying "internal link" after reading the text.</p>
+                    <p> Like Firefox, table rows are read as groups (though it doesn't say anything like "list box"). You can enter table mode for more normal nav. In table mode, headers are not read along with cell contents.</p>
+                    <p>Forms are navigated slightly differently (ChromeVox+right/ left for fieldsets, ChromeVox+up/down for options within), but are generally read in an intuitive way, like with Chrome and VoiceOver, once you figure that out. The combobox, however, I couldn't figure out. I could activate the menu, but couldn't seem to get it to read me options.</p>
+                    <p>"Section, Discussion" is announced. And again, the lists are read well, without odd focusing or "pillet" or "bullet" being spoken.</p>
+
+
+            </section>
+        
+        </main>
+    </div>
+    
+    <footer>
+        <small>The footer text.</small>
+    </footer>
+    
+</body>
+</html>
