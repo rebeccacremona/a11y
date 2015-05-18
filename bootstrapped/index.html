@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">  
+    <title>Bootstrapped, Simple | A11Y Experiments</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/normalize.css" rel="stylesheet" media="all">
+    <link href="bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href="css/styles.css" rel="stylesheet" media="all">
+    <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body>
+
+    <nav class="nav navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">a11y</a>
+            </div> <!-- /.navbar-header -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="//www.somwhere.com/one">One</a></li>
+                    <li><a href="//www.somwhere.com/one">Two</a></li>
+                    <li><a href="//www.somwhere.com/one">Three</a></li>
+                    <li><a href="//www.somwhere.com/one">Four</a></li>
+                    <li><a href="//www.somwhere.com/one">Five</a></li>
+                    <li><a href="//www.somwhere.com/one">Six</a></li>
+                    <li><a href="//www.somwhere.com/one">Seven</a></li>
+                    <li><a href="//www.somwhere.com/one">Eight</a></li>
+                </ul>
+            </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container-fluid -->
+    </nav>
+      
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3" id="sidebar">
+            <section>
+                <nav class="nav-sidebar">
+                <h2>Table of Contents</h2>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#the_code">The code</a></li>
+                    <li><a href="#the_changes">Changes from last experiment</a></li>
+                    <li><a href="#the_discussion">Discussion</a></li>
+                </ul>
+                </nav>
+            </section>
+        </div>
+        <div class="col-sm-7" id="main">      
+            <main>
+                <header>  
+                    <h1>A11Y Experiments: Bootstrapped, Simple</h1>
+                </header>
+                <section id="code_section">
+                    <h2 id="the_code">The Code</h2>
+               
+                    <h3>A paragraph</h3>
+
+                    <p>Let's try some text wrapped in "strong" tags: <strong>This text is strong!</strong> Now, let's try some text wrapped in emphasis tags: <em>This is emphasized!</em> Now let's try some code: <code>This is code!</code> Let's also try a link <a href="//www.google.com">link to somewhere else</a> (you should arrive at google) and a <a href="#ordered_list">link to a non-tabbable element in this page</a> (you should end up on an ordered list). And we're done with normal paragraph text.</p>
+
+                    <h3>Lists</h3>
+                               
+                    <ol id="ordered_list">
+                       <li>This is the first item in an ordered list.</li>
+                       <li>This is the second item in an ordered list.</li>
+                    </ol>
+
+                    <ul id="unordered_list">
+                       <li>This is the first item in an unordered list.</li>
+                       <li> <a href="#">This is the second item in an unordered list, a giant link.</a></li>
+                    </ul>
+
+                    <ul id="unordered_list_2" class="no_bullets">
+                       <li>This list item has no bullet.</li>
+                       <li> <a href="#">This link is in a list item with no bullets.</a></li>
+                    </ul>
+
+                    <ul id="unordered_list_3" class="pseudo_bullets" style="list-style-type: none;">
+                       <li>This list item has a css bullet, made with a pseudo-element.</li>
+                       <li> <a href="#">This one does too, but is also a link.</a></li>
+                    </ul>
+
+                    <h3>A table</h3>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10</td>
+                                <td>Elaine</td>
+                                <td>Benes</td>
+                                <td>elaine_benes@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>Jerry</td>
+                                <td>Seinfeld</td>
+                                <td>jerry_seinfeld@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>34</td>
+                                <td>Cosmo</td>
+                                <td>Kramer</td>
+                                <td>cosmo_kramer@gmail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>A Form</h3>
+
+                    <form class="panel panel-default" action="#" method="post">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Order A Beverage</h4>
+                      </div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                 <label for="name">Name:</label>
+                                 <input class="form-control" type="text" name="name" id="name" value=""/>
+                            </div>
+
+                            <div class="form-group">
+                                <fieldset>
+                                    <legend>Beverage Choice</legend>
+                                         <div class="radio">
+                                             <label for="radio-choice-1">
+                                                 <input type="radio" name="beverage" id="radio-choice-1" value="coffee" />
+                                                 coffee
+                                             </label>
+                                         </div>
+
+                                         <div class="radio">
+                                             <label for="radio-choice-2">
+                                                 <input type="radio" name="beverage" id="radio-choice-2" value="tea" />
+                                                 tea
+                                             </label>
+                                         </div>
+                                </fieldset>
+                            </div>
+                           
+
+                            <div class="form-group">
+                                <fieldset>
+                                <legend>How do you take your beverage?</legend>
+                                    <div class="checkbox">
+                                        <label for="milk">
+                                        <input type="checkbox" name="temp" id="milk" />
+                                        with milk
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label for="cream">
+                                            <input type="checkbox" name="temp" id="cream" />
+                                            with cream
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label for="sugar">
+                                            <input type="checkbox" name="temp" id="sugar" />
+                                            with sugar
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="select-choice">Prefered Temperature?</label>
+                                <select class="form-control" name="select-choice" id="select-choice">
+                                    <option value="hot">hot</option>
+                                    <option value="room_temp">room temperature</option>
+                                    <option value="iced">iced</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="textarea">Anything else?</label>
+                                <textarea class="form-control" name="textarea" id="textarea"></textarea>
+                            </div>
+                            
+                            <div>
+                                <input type="submit" value="Submit" />
+                            </div>
+                        
+                        </div>
+                    </form>
+
+                    <h3>Less Common Elements</h3>
+
+                    <blockquote><p>This is a paragraph inside a blockquote. What follows next will be some css code, wrapped in "pre" and "code" tags.</p></blockquote>
+
+                    <pre><code>
+                    #header h1 a { 
+                        display: block; 
+                        width: 300px; 
+                        height: 80px; 
+                    }
+                    </code></pre>
+                </section>
+                <section id="changes_section">
+                    <h2 id="the_changes">Changes</h2>
+                    <ol>
+                        <li> Included bootstrap css, with no other changes to html. Some styles appear, but sr experience seemingly unchanged.</li>
+                        <li> Included bootstrap js, with no other changes to html. Experience seemingly unchanged.</li>
+                        <li> Added Boostrap container class. More styling kicks in, but experience otherwise seemingly unchanged.</li>
+                        <li> <p>Moved the nav into Bootstrap navbar. Actually involves only small changes to markup:</p> 
+                            <ul>
+                            <li>header moved inside main</li>
+                            <li>nav moved to top</li>
+                            <li>nav's internal ul wrapped in a container div, then another div with boostrap "nav navbar-collapse" classes.</li>
+                            <li> nav's internal ul, with it's "navbar-collapse" wrapper div, is preceded by a div with class "navbar-header", which contains only a button and an anchor tag. At large screen size, the button is set to display:none, by Bootstrap. The anchor tag, which is meant to hold branding, is thus the first displayable element on the page.</li>
+                            </ul>
+                            <p>Confirmed appearance correct. In Safari dev tools, confirmed that this loaded without Bootstrap adding any extra classes or any significant aria roles or attributes. Surprsingly, sr experience quite different. See <a href="#discussion_navbar">first discussion point.</a></p>
+                        </li>
+                        <li> Moved the "contents" section outside of main, and set up a two-column grid: one for contents, and one for main. This of course means "contents" is read before the h1 and before main, but other than that, doesn't change the sr experience. </li>
+                        <li>For good measure, I made the contents section an ordered list, with internal links... which, I suspected, wouldn't currently work for VoiceOver or keyboard users since the internal link to the ordered list didn't work. Turns out, <a href="#discussion_internal_links">they do work...a bit...sometimes...</a>
+                        </li> 
+                        <li> Added the Bootstrap "table" class to the table. Styles added, but confirm sr experience seems unchanged.</li>
+                        <li> <p>Started adding Bootstrap form classes to the form... and discovered it wants a different html structure than I used in the "Straight-Up HTML" experiment, particularly for radiobutton groups and checkbox groups. Redoing to match Bootstrap requirements, and testing again in all browsers.</p>
+                            <ul>
+                                <li><a href="#discussion_labels">Wrap checkbox/radio input elements with their labels</a>, instead of closing the label element, then starting the input element</li>
+                                <li>Add lots of seemingly unnecessary divs around each checkbox and radio button. Fine. Necessary for Bootstrap styling, and it does group things together.</li>
+                                <li>Wrap the form in a panel using yet more divs, so that it doesn't look so weird. sr experience seemingly unaffected.</li>
+                            </ul>
+
+                        </li>
+                        <li> Added a bit of extra styling to make this page easier to read. Nothing fancy, just margins, padding, and a couple of borders</li>
+
+                    </ol>
+                </section>
+                <section id="discussion_section">
+                    <h2 id="the_discussion">Discussion</h2>
+                    <h3>Tested Software Versions</h3>
+                        <ul>
+                            <li>OSX 10.9.5</li>
+                            <li>Safari 7.1.6</li>
+                            <li>Chrome 42.0.2311.152</li>
+                            <li>Firefox 38.0.1</li>
+                        </ul>
+                    <h3 id="discussion_navbar">The navbar, unordered lists, and css</h3>
+                        <p> I was very surprised to hear that the nav links were being read quite differently, when they were moved to the navbar. Safari with VoiceOver no longer first puts focus on the li and says "pillet", and only then puts focus on the link and says "link one." 
+                        </p>
+                        <p>To see if this is caused by css or something else, I added another list to the code, and added a style:
+                            <code>
+                            ul.no_bullets {
+                                list-style-type: none;
+                            }
+                            </code>
+                        </p>
+                        <p>Then I tested again in Safari..... and wonder of wonders... the ul.no_bullets was read without any of the bullet nonsense: just nice clean readings of the li content. <em>Apparently, css does matter, sometimes, even to screenreaders.</em> Shocking.
+                        </p>
+                        <p>This got me thinking about pseudo elements. If I remove the default bullet from the list, then add something back in with a css::before psuedo element, will that successfully achieve a visual effect, without affecting the screen reader experience? Let's try it:
+                        </p>
+                        <pre><code>
+                                ul.pseudo_bullets {
+                                  margin-left: 0;
+                                  padding-right: 0;
+                                  list-style-type: none;
+                                }
+
+                                ul.pseudo_bullets li::before {
+                                  content: "+";
+                                  margin-right: 5px;
+                                  font-size: 80%;
+                                  background-color: rgb(200,200,200);
+                                  color: white;
+                                  font-weight: bold;
+                                  padding: 3px 8px;
+                                  border-radius: 3px;
+                                }
+                            </code></pre>
+                        <p>To my horror, the css-inserted pseudo elements are handled just like the default bullets: the bullet is read, and gets focus, and adds a step to navigation when the li starts with a link. I then tested in Firefox and Chrome, still using VoiceOver. In each case, the list items with no decoration were read cleanly. In each case, the list items with a pseudo-element bullet had the bullet read, plus other undesireable behavior, as described in the "Straight-Up HTML" example.</p>
+                        <p> This is a surprise. I can only imagine that developers must be using CSS pseudo elements to insert non-presentational information to pages often enough, that VoiceOver needs to track them. Since we can't add attributes to a pseudo-element... we can't mark them aria-hidden. So, we'll have to ignore <a href="//www.accessifyforum.com/viewtopic.php?p=72624"> all the advice</a> suggesting pseudo-elements be used insert presentational content without bothering screen reader users. It may have been true before, but is no longer.</p>
+                        <p>Interestingly, ChromeVox, which read list items cleanly in the first place, ignores the css psuedo-elements. It would be interesting to test using JAWS, NVDA etc., and see what they do.</p>
+
+                        <h3>Internal Links</h3>
+                        <p>It's known that internal links don't always work, if the item you want to skip to isn't in the tab order. So, you have to add a tabindex of -1, if not 0, so that it's at least programmatically focusable. We saw that in the "Straight-Up HTML" experiment, across all browsers, using VoiceOver. So, I expected, when I added internal links to the headings in the discussion section, they'd fail. It turns out, in Safari, they work for VoiceOver focus, though they still fail for keyboard focus. Wild. In Chrome, they still don't work, either VoiceOver focus or keyboard focus. Even ChromeVox struggles: audio feedback, on clicking the link, seems to suggest focus is moved to the item, but you can't then continue navigting. So! Even if it looks like this works, at first... it still doesn't, at least not reliably.
+                        </p>
+
+                        <h3>Wrapping input in labels</h3>
+                        <p> I generally prefer not to wrap a label around an input element. E.g., I prefer <code>&lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;&lt;input id=&quot;name&quot; type=&quot;text&quot;/&gt;</code> over <code>&lt;label for=&quot;name&quot;&gt;&lt;input id=&quot;name&quot; type=&quot;text&quot;/&gt;Name:&lt;/label&gt;</code>. It just seems neater. Finish one thought, then start the next. But, that wasn't working with Bootstrap's styles, and plenty of reputable sources, like the <a href="developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/How_to_structure_an_HTML_form"> Mozilla Developer Network</a> wrap inputs in labels in their examples. Since Bootstrap's styling doesn't work otherwise.... I changed the code.</p>
+                        <p> The earth continued to orbit the sun. Safari with VoiceOver continued to behave the same way as before. That is to say, fine, though redundant labels are read. (There is a VoiceOver config I can use to change that, I think.) Chrome with VoiceOver continued to behave the same way as before. Firefox with VoiceOver continued to behave the same way as before. I did not test with ChromeVox. Conclusion: it's fine.</p> 
+                </section>          
+            </main>
+            <footer>
+                <small>The footer text.</small>
+            </footer>
+        </div>
+    </div> <!-- /.row -->
+    </div> <!-- /.container-fluid -->
+
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
