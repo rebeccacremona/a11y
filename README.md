@@ -5,3 +5,8 @@ Well, I am.
 
 Each directory contains a self-contained page. Each experiment builds on the next. Each page contains the markup, a description of what I changed, and a discussion of the results.
 
+## See them in action:
+
+- [Straight up html5 (no css, no nothing)](http://curlsandsuch.com/a11y/straight-up/)
+- [Bootstrapped](http://curlsandsuch.com/a11y/bootstrapped/)
+
