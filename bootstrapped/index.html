@@ -44,7 +44,7 @@
       
     <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-3" id="sidebar">
+        <div class="col-sm-2" id="sidebar">
             <section>
                 <nav class="nav-sidebar">
                 <h2>Table of Contents</h2>
@@ -56,7 +56,7 @@
                 </nav>
             </section>
         </div>
-        <div class="col-sm-7" id="main">      
+        <div class="col-sm-8" id="main">      
             <main>
                 <header>  
                     <h1>A11Y Experiments: Bootstrapped, Simple</h1>
@@ -289,7 +289,7 @@
                         <p>Interestingly, ChromeVox, which read list items cleanly in the first place, ignores the css psuedo-elements. It would be interesting to test using JAWS, NVDA etc., and see what they do.</p>
 
                         <h3>Internal Links</h3>
-                        <p>It's known that internal links don't always work, if the item you want to skip to isn't in the tab order. So, you have to add a tabindex of -1, if not 0, so that it's at least programmatically focusable. We saw that in the "Straight-Up HTML" experiment, across all browsers, using VoiceOver. So, I expected, when I added internal links to the headings in the discussion section, they'd fail. It turns out, in Safari, they work for VoiceOver focus, though they still fail for keyboard focus. Wild. In Chrome, they still don't work, either VoiceOver focus or keyboard focus. Even ChromeVox struggles: audio feedback, on clicking the link, seems to suggest focus is moved to the item, but you can't then continue navigting. So! Even if it looks like this works, at first... it still doesn't, at least not reliably.
+                        <p>It's known that internal links don't always work, if the item you want to skip to isn't in the tab order. So, you have to add a tabindex of -1, if not 0, so that it's at least programmatically focusable. We saw that in the "Straight-Up HTML" experiment, across all browsers, using VoiceOver. So, I expected, when I added internal links to the headings in the discussion section, they'd fail. It turns out, in Safari, they work for VoiceOver focus, though they still fail for keyboard focus. Wild. In Chrome, they still don't work, either VoiceOver focus or keyboard focus. Even ChromeVox struggles: audio feedback, on clicking the link, seems to suggest focus is moved to the item, but you can't then continue navigating. So! Even if it looks like this works, at first... it still doesn't, at least not reliably.
                         </p>
 
                         <h3>Wrapping input in labels</h3>
